@@ -1,0 +1,80 @@
+/* nav {
+  background-color: rgba(188, 95, 207, 0.416);
+} */
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  height: 5rem;
+  /* margin: 1rem auto; */
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+.navbar-menu li {
+  font-weight: 300;
+  list-style: none;
+  position: relative;
+  padding-bottom: 0.2rem;
+}
+
+.navbar-menu li:hover {
+  color: var(--steel-pink);
+  font-weight: 600;
+}
+
+.navbar-menu li:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: var(--steel-pink);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .3s;
+}
+
+.navbar-menu li:hover:after {
+  width: 100%;
+}
+
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.search-icon,
+.basket_icon {
+  height: 1.2rem;
+  width: 1.2rem;
+  color: var(--black);
+  margin-left: 1rem;
+}
+
+
+.sign-in-btn {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  border: 2px solid black;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+
+.sign-in-btn:hover {
+  border: 2px solid var(--steel-pink);
+  background-color: var(--mauve);
+}
